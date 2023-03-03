@@ -7,18 +7,18 @@ $_SESSION['nome'] = 'João';
 $_SESSION['idade'] = 30;
 
 // Exibe os valores da sessão
-echo "Nome: " . $_SESSION['nome'] . "<br>";
-echo "Idade: " . $_SESSION['idade'] . "<br>";
+echo "Nome: " . $_SESSION['nome'] . "\n";
+echo "Idade: " . $_SESSION['idade'] . "\n";
 
 // Remove um valor da sessão
 unset($_SESSION['idade']);
 
 // Exibe novamente os valores da sessão
-echo "Nome: " . $_SESSION['nome'] . "<br>";
+echo "Nome: " . $_SESSION['nome'] .  "\n";
 if (isset($_SESSION['idade'])) {
-  echo "Idade: " . $_SESSION['idade'] . "<br>";
+  echo "Idade: " . $_SESSION['idade'] .  "\n";
 } else {
-  echo "A idade não está definida na sessão.<br>";
+  echo "A idade não está definida na sessão. \n";
 }
 
 // Encerra a sessão
